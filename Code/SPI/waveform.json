@@ -1,0 +1,36 @@
+{signal: [
+
+  {name: 'clk', wave: 'p..............|.', node: '.a.'},
+
+  {name: 'CONV/CS', wave: '10.............|1', node: '.b.'},
+
+  {name: 'SCK', wave: '0...1..0..1..0.|.', node: '....c..d..e'},
+
+  {										   node: '.l..fk.g..h'},
+
+  {name: 'SDI', wave: 'x2.....2......x|.', data: ['S/D', 'O/S'], node: '.i...j'},
+
+  {node: '.n.o'},
+
+  {name: 'SDO', wave: 'x..=....=.....=|', data: ['B15','B14'], node: '...m'},
+
+  ],
+
+  edge: [
+
+  'b<-|->c t1', 'c-f', 'd-g', 'f<->g t4', 'e-h', 'g<->h t5', 'j-k', 'k<->f t3', 'i-l', 'l<->f t4', 'b-|', 'b-n',
+  'o-m', 'n<->o t6'
+
+  ],
+
+ foot: {
+   text:
+   ['tspan', 'clk frequency: 30MHz']
+
+ },
+
+  config: {
+    hscale: 1
+
+          }
+}
